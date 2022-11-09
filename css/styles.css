@@ -86,7 +86,7 @@ a {
 .hero-btn {
   color: rgba(255, 255, 255, 1);
   background-color: var(--interactive-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  
   border-radius: 4px;
 
   font-weight: 700;
@@ -99,6 +99,11 @@ a {
   letter-spacing: 0.06em;
 
   cursor: pointer;
+}
+
+.hero-btn:hover {
+background-color: #188CE8;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 /* Особливості */
@@ -170,11 +175,16 @@ a {
 
 /* Портфоліо */
 
+.portfolio-heading {
+  display: none;
+}
+
 .portfolio-filter button {
   background-color: var(--light-background);
   border-radius: 4px;
   border-color: transparent;
 
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -188,6 +198,7 @@ a {
 .portfolio-filter button:hover,
 .portfolio-filter button:focus {
   background-color: var(--interactive-color);
+  color: rgba(255, 255, 255, 1);
 }
 
 .portfolio-list h2 {
